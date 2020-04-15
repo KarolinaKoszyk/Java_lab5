@@ -30,7 +30,7 @@ public class Sort {
     }
 
 
-    void bubbleSort(int arr[])
+    void bubbleSort(int [] arr)
     {
         int n = arr.length;
         for (int i = 0; i < n-1; i++)
@@ -44,7 +44,7 @@ public class Sort {
                 }
     }
 
-    void insertionSort(int arr[])
+    void insertionSort(int [] arr)
     {
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
@@ -62,7 +62,7 @@ public class Sort {
         }
     }
 
-    void merge(int arr[], int l, int m, int r)
+    void merge(int [] arr, int l, int m, int r)
     {
         // Find sizes of two subarrays to be merged
         int n1 = m - l + 1;
@@ -182,7 +182,7 @@ public class Sort {
         }
     }
 
-    int shellSort(int arr[])
+    int shellSort(int [] arr)
     {
         int n = arr.length;
 
