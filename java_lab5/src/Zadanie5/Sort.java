@@ -135,7 +135,10 @@ public class Sort {
             merge(arr, l, m, r);
         }
     }
-
+    void mergeSort(int arr[])
+    {
+        mergeSort(arr, 0, arr.length-1);
+    }
     int partition(int arr[], int low, int high)
     {
         int pivot = arr[high];
@@ -161,7 +164,10 @@ public class Sort {
 
         return i+1;
     }
-
+    void partitionSort(int arr[])
+    {
+        partition(arr, 0, arr.length-1);
+    }
 
     /* The main function that implements QuickSort()
       arr[] --> Array to be sorted,
@@ -181,8 +187,12 @@ public class Sort {
             quickSort(arr, pi+1, high);
         }
     }
+    void quickSort(int arr[])
+    {
+        quickSort(arr, 0, arr.length-1);
+    }
 
-    int shellSort(int [] arr)
+    void shellSort(int [] arr)
     {
         int n = arr.length;
 
@@ -211,7 +221,6 @@ public class Sort {
                 arr[j] = temp;
             }
         }
-        return 0;
     }
 
 }
